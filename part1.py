@@ -114,13 +114,13 @@ To use this code,
 
 '''
 
-if len(sys.argv) < 3:
-    print ('Please make sure you have installed Python 3.4 or above!')
-    print ("Usage on Windows:  python evalResult.py gold predictions")
-    print ("Usage on Linux/Mac:  python3 evalResult.py gold predictions")
-    sys.exit()
+# if len(sys.argv) < 3:
+#     print ('Please make sure you have installed Python 3.4 or above!')
+#     print ("Usage on Windows:  python evalResult.py gold predictions")
+#     print ("Usage on Linux/Mac:  python3 evalResult.py gold predictions")
+#     sys.exit()
 
-test_set = sys.argv[1]
-training_set = sys.argv[2]
+# test_set = sys.argv[1]
+# training_set = sys.argv[2]
 
-predict_tag(test_set, training_set)
+# predict_tag(test_set, training_set)
