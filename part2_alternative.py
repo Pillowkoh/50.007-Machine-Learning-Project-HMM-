@@ -184,22 +184,22 @@ class Viterbi:
 # print(score_array)
 
 
-filepath = './ES/ES/train'
-t_prob = transition_MLE(filepath=filepath)
-e_prob = emission_MLE(filepath=filepath)
+# filepath = './ES/ES/train'
+# t_prob = transition_MLE(filepath=filepath)
+# e_prob = emission_MLE(filepath=filepath)
 
-viterbi = Viterbi(t_prob, e_prob)
+# viterbi = Viterbi(t_prob, e_prob)
 
-# sentence =['La',
-# 'comida',
-# 'estuvo',
-# 'muy',
-# 'sabrosa',
-# '.']
+# # sentence =['La',
+# # 'comida',
+# # 'estuvo',
+# # 'muy',
+# # 'sabrosa',
+# # '.']
 
-# prediction = viterbi.forward(sentence=sentence)
-# print(prediction)
+# # prediction = viterbi.forward(sentence=sentence)
+# # print(prediction)
 
-test_set = './ES/ES/dev.in'
-viterbi.predict(test_set=test_set)
+# test_set = './ES/ES/dev.in'
+# viterbi.predict(test_set=test_set)
 
