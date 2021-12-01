@@ -33,7 +33,7 @@ def emission_MLE(filepath):
         else:
             # separate each line into their token and tags
             line = line.strip()
-            token, tag = line.split(sep=separator)
+            token, tag = line.rsplit(sep=separator, maxsplit=1)
 
             # count the total number of tag occurrences
             tag_count[tag] += 1
