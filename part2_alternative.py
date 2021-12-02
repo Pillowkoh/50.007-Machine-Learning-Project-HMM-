@@ -45,7 +45,7 @@ def transition_MLE(filepath):
 
         if line != '\n':
             line = line.strip()
-            token, tag = line.split(sep=separator)
+            token, tag = line.rsplit(sep=separator, maxsplit=1)
 
         # Handles the start of file
         if prev_tag == None and line != '\n':
