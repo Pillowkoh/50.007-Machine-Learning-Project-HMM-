@@ -53,7 +53,12 @@ if __name__ == '__main__':
         elif args.part == '4':
             model = part4.StructuredPerceptron()
             model.train(train_dataset, args.epochs)
-            model.predict(dev_dataset).write_preds(f'{ds_path}/dev.p{args.part}.out')
+            model.predict(dev_dataset)
+            if ds_path[-5:] == '-test':
+                model.write_preds(f'{ds_path}/test.p{args.part}.out')
+            else:
+                model.write_preds(f'{ds_path}/dev.p{args.part}.out')
+
 
         else:
             raise argparse.ArgumentError(message='Input valid parameters for --part.')

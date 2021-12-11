@@ -67,7 +67,7 @@
 
 Очень O
 вкусная O
-еда B-negative
+еда B-positive
 , O
 душевная O
 атмосфера B-positive
@@ -165,7 +165,7 @@
 если O
 что-то O
 из O
-меню B-negative
+меню O
 придется O
 ждать O
 . O
@@ -251,7 +251,7 @@
 день O
 ! O
 
-Обслуживание B-positive
+Обслуживание O
 не O
 понравилось O
 - O
@@ -270,7 +270,7 @@
 что O
 оба O
 раза O
-ресторан O
+ресторан B-negative
 был O
 полупустой O
 ... O
@@ -280,7 +280,7 @@
 минусах O
 . O
 
-Салаты O
+Салаты B-positive
 готовили O
 минут O
 20 O
@@ -295,7 +295,7 @@
 , O
 подошла O
 милая O
-девушка B-negative
+девушка B-positive
 , O
 поздоровалась O
 , O
@@ -357,7 +357,7 @@
 
 Особенно O
 хорошая O
-официантка B-negative
+официантка B-neutral
 Алёна O
 , O
 милая O
@@ -411,7 +411,7 @@
 : O
 интерьер B-positive
 , O
-обслуживание B-negative
+обслуживание O
 . O
 кухня B-positive
 . O
@@ -455,7 +455,7 @@ White-Rabbit O
 я O
 таки O
 посетила O
-Террасу O
+Террасу B-positive
 , O
 в O
 которой O
@@ -575,7 +575,7 @@ White-Rabbit O
 ! O
 
 Прекрасный O
-ресторан B-positive
+ресторан B-negative
 ! O
 
 Обслуживание B-positive
@@ -667,16 +667,16 @@ VIP O
 прекрасно O
 дополняет O
 сладковатый O
-апельсиновый B-positive
-соус I-positive
+апельсиновый B-negative
+соус O
 . O
 
 Мой O
 друг O
 заказал O
-цезарь B-neutral
-с I-neutral
-креветками I-neutral
+цезарь B-negative
+с I-negative
+креветками I-negative
 ( O
 курицы B-negative
 не O
@@ -703,7 +703,7 @@ VIP O
 , O
 заказали O
 2 O
-стейка O
+стейка B-negative
 ( O
 стриплойн O
 ) O
@@ -745,7 +745,7 @@ VIP O
 , O
 и O
 разные O
-официанты B-negative
+официанты B-neutral
 , O
 но O
 тем O
@@ -784,8 +784,8 @@ VIP O
 год O
 . O
 
-Обслуживающий B-positive
-персонал I-positive
+Обслуживающий O
+персонал B-positive
 нареканий O
 не O
 вызывает O
@@ -911,7 +911,7 @@ VIP O
 полно O
 описывают O
 данное O
-заведение B-negative
+заведение O
 , O
 но O
 отдельно O
@@ -984,8 +984,8 @@ VIP O
 и O
 о O
 хрупких O
-девушках B-positive
-клиентах I-positive
+девушках O
+клиентах O
 ! O
 
 А O
@@ -1051,7 +1051,7 @@ VIP O
 место B-positive
 ! O
 
-Порции B-neutral
+Порции B-positive
 приличные O
 . O
 
@@ -1182,7 +1182,7 @@ VIP O
 " O
 :) O
 ради O
-десертов B-negative
+десертов O
 я O
 бы O
 пришла O
@@ -1296,16 +1296,16 @@ VIP O
 подумать O
 . O
 
-Персоналу O
+Персоналу B-positive
 спасибо O
 ) O
 
 Вызвал O
 нам O
-администратора B-negative
+администратора O
 , O
 наиприятнейшая O
-девушка B-negative
+девушка B-positive
 , O
 все O
 рассказала O
@@ -1351,7 +1351,7 @@ VIP O
 . O
 
 Отмечу O
-обслуживание O
+обслуживание B-negative
 на O
 хорошем O
 уровне O
@@ -1359,13 +1359,13 @@ VIP O
 огромное O
 спасибо O
 нашему O
-официанту B-negative
+официанту O
 Вусалу O
 ! O
 ! O
 ! O
 
-Интерьер B-negative
+Интерьер B-neutral
 скажем O
 прямо O
 ни O
@@ -1417,14 +1417,14 @@ VIP O
 ! O
 
 И O
-блюда B-negative
+блюда O
 путали O
 . O
 
 К O
 гренкам O
 и O
-стейку B-negative
+стейку B-positive
 претензий O
 нет O
 , O
@@ -1440,8 +1440,8 @@ VIP O
 Америка O
 маки O
 , O
-чукка B-neutral
-салат I-neutral
+чукка O
+салат O
 и O
 клубничный O
 чай B-negative
@@ -1483,7 +1483,7 @@ VIP O
 нас O
 встретила O
 приветливая O
-девушка B-negative
+девушка B-positive
 , O
 проводила O
 до O
@@ -1594,11 +1594,11 @@ VIP O
 хотелось O
 бы O
 отметить O
-стейки O
-из O
-говядины O
-и O
-лосося O
+стейки B-positive
+из I-positive
+говядины I-positive
+и I-positive
+лосося I-positive
 ! O
 
 Для O
@@ -1654,7 +1654,7 @@ VIP O
 конечно O
 , O
 большего O
-разнообразия B-positive
+разнообразия O
 в O
 меню O
 , O
@@ -1723,7 +1723,7 @@ VIP O
 . O
 
 Достойное O
-обслуживание B-negative
+обслуживание O
 . O
 
 К O
@@ -1914,7 +1914,7 @@ VIP O
 гостях O
 :-) O
 
-Официантка B-negative
+Официантка B-neutral
 , O
 все O
 делала O
@@ -1945,7 +1945,7 @@ VIP O
 " O
 . O
 
-Обслуживание B-positive
+Обслуживание O
 всегда O
 на O
 высшем O
@@ -1967,7 +1967,7 @@ VIP O
 , O
 баклажаны B-positive
 и O
-рулетики B-positive
+рулетики O
 с O
 грибами O
 . O
@@ -2029,7 +2029,7 @@ VIP O
 ждать O
 . O
 
-Интерьер B-neutral
+Интерьер O
 на O
 любителя O
 . O
@@ -2070,7 +2070,7 @@ VIP O
 то O
 , O
 что O
-столики B-negative
+столики O
 ( O
 справа O
 от O
@@ -2109,7 +2109,7 @@ VIP O
 ни O
 одного O
 названия O
-блюда B-negative
+блюда O
 я O
 не O
 назову O
@@ -2117,7 +2117,7 @@ VIP O
 т O
 . O
 к O
-салаты O
+салаты B-negative
 и O
 мясные-сырные O
 тарелки O
@@ -2126,7 +2126,7 @@ VIP O
 заказаны O
 , O
 а O
-горячее B-negative
+горячее O
 я O
 не O
 заказывала O
@@ -2148,7 +2148,7 @@ VIP O
 вкусно O
 . O
 
-Интерьер B-negative
+Интерьер B-positive
 ? O
 ? O
 
@@ -2160,7 +2160,7 @@ VIP O
 еще O
 плутают O
 по O
-заведению B-negative
+заведению B-neutral
 , O
 минут O
 5 O
@@ -2217,9 +2217,9 @@ VIP O
 бизнес-ланче O
 , O
 - O
-салат B-positive
+салат O
 , O
-суп B-negative
+суп O
 , O
 горячее O
 , O
@@ -2294,9 +2294,9 @@ VIP O
 молодой O
 человек O
 заказал O
-блюда O
-из O
-мяса O
+блюда B-negative
+из I-negative
+мяса I-negative
 на O
 мангале O
 , O
@@ -2319,8 +2319,8 @@ VIP O
 заказали O
 по O
 порции B-negative
-разного O
-мяса O
+разного I-negative
+мяса I-negative
 на O
 мангале O
 тоже O
@@ -2329,9 +2329,9 @@ VIP O
 ! O
 
 Салаты B-positive
-со O
-свежайшей O
-зеленью O
+со I-positive
+свежайшей I-positive
+зеленью I-positive
 , O
 мясо O
 и O
@@ -2433,8 +2433,8 @@ VIP O
 вашему O
 желанию O
 добавят O
-сыр B-neutral
-Филадельфия I-neutral
+сыр O
+Филадельфия O
 , O
 кроме O
 того O
@@ -2459,8 +2459,8 @@ VIP O
 тунцом O
 ) O
 , O
-порции B-positive
-салатов I-positive
+порции B-negative
+салатов I-negative
 большие O
 , O
 из O
@@ -2803,7 +2803,7 @@ VIP O
 ! O
 
 Это O
-место B-negative
+место O
 у O
 меня O
 вызвало O
@@ -2892,7 +2892,7 @@ VIP O
 Прекрасная O
 гостиница O
 для O
-медового B-negative
+медового O
 месяца O
 с O
 уютными O
@@ -2969,7 +2969,7 @@ VIP O
 ужине O
 в O
 ресторане O
-Пури B-positive
+Пури O
 . O
 
 И O
@@ -2983,7 +2983,7 @@ VIP O
 ресторане O
 очень O
 вкусная O
-еда B-negative
+еда B-positive
 , O
 в O
 частности O
@@ -3010,7 +3010,7 @@ VIP O
 В O
 субботу O
 вечером O
-мест B-positive
+мест O
 в O
 некурящей O
 зоне O
@@ -3019,7 +3019,7 @@ VIP O
 . O
 
 Красивый O
-интерьер B-negative
+интерьер B-positive
 - O
 сидели O
 у O
@@ -3115,7 +3115,7 @@ VIP O
 , O
 в O
 это O
-заведение B-negative
+заведение O
 мы O
 больше O
 не O
@@ -3174,7 +3174,7 @@ VIP O
 чудесно O
 ! O
 
-Интерьер B-negative
+Интерьер B-positive
 в O
 нашем O
 зале O
@@ -3203,7 +3203,7 @@ VIP O
 посетили O
 этот O
 замечательный O
-ресторанчик B-positive
+ресторанчик O
 поздним O
 вечером O
 , O
@@ -3231,7 +3231,7 @@ VIP O
 слышал O
 об O
 этом O
-заведении O
+заведении B-negative
 и O
 решил O
 придти O
@@ -3297,7 +3297,7 @@ VIP O
 
 Кофе O
 , O
-чай B-negative
+чай O
 с O
 мятой O
 - O
@@ -3343,7 +3343,7 @@ s O
 еда B-negative
 и O
 немаленькие O
-порции B-negative
+порции B-positive
 , O
 подача B-positive
 обычная O
@@ -3351,10 +3351,10 @@ s O
 
 В O
 особенности O
-суп B-negative
+суп O
 из O
-двух O
-рыб O
+двух B-negative
+рыб I-negative
 , O
 стейк O
 из O
@@ -3376,7 +3376,7 @@ s O
 и O
 Ваш O
 замечательный O
-ресторан B-positive
+ресторан B-negative
 ! O
 
 Обслуживание B-positive
@@ -3395,7 +3395,7 @@ s O
 толком O
 . O
 
-Место B-positive
+Место O
 очень O
 интересное O
 . O
@@ -3405,11 +3405,11 @@ s O
 Влада O
 ! O
 
-Порции B-neutral
+Порции B-positive
 небольшие O
 , O
 но O
-паста B-neutral
+паста B-positive
 была O
 оч O
 . O
@@ -3511,7 +3511,7 @@ s O
 
 Заказала O
 себе O
-салат B-positive
+салат O
 , O
 так O
 мне O
@@ -3704,14 +3704,14 @@ s O
 
 Салат B-positive
 цезарь I-positive
-вся O
-тарелка O
+вся I-positive
+тарелка I-positive
 это O
 листья O
 салата O
 , O
 немного O
-бекона O
+бекона B-negative
 по O
 кругу O
 и O
@@ -3726,7 +3726,7 @@ s O
 цезарь O
 готовится O
 с O
-курицей B-negative
+курицей O
 ) O
 . O
 
@@ -3790,13 +3790,13 @@ s O
 Быстрое O
 , O
 качественное O
-обслуживание B-negative
+обслуживание O
 , O
 хотя O
 одно O
 блюдо O
 все-таки O
-официант B-negative
+официант B-neutral
 принести O
 забыл O
 . O
@@ -3965,7 +3965,7 @@ myfant.ru O
 банкет O
 внизу O
 и O
-повара B-negative
+повара O
 не O
 успевают O
 ... O
@@ -3992,7 +3992,7 @@ myfant.ru O
 это O
 наше O
 любимое O
-место B-positive
+место O
 . O
 
 Я O
@@ -4024,7 +4024,7 @@ myfant.ru O
 . O
 
 Довольны O
-кухней B-positive
+кухней O
 , O
 сервисом O
 , O
@@ -4107,7 +4107,7 @@ myfant.ru O
 а O
 как O
 же O
-бармен B-negative
+бармен O
 ? O
 " O
 мы O
@@ -4138,7 +4138,7 @@ myfant.ru O
 
 коктели B-positive
 и O
-алкоголь O
+алкоголь B-negative
 видно O
 что O
 не O
@@ -4167,7 +4167,7 @@ myfant.ru O
 советую O
 . O
 
-Горячее B-negative
+Горячее B-positive
 готовилось O
 минут O
 10 O
@@ -4189,9 +4189,9 @@ myfant.ru O
 
 Еще O
 попробовала O
-лапшу B-neutral
-с I-neutral
-креветками I-neutral
+лапшу B-positive
+с I-positive
+креветками I-positive
 ( O
 360 O
 р O
@@ -4340,7 +4340,7 @@ myfant.ru O
 
 Ещё O
 был O
-салат B-positive
+салат O
 с O
 форелью O
 , O
@@ -4359,7 +4359,7 @@ myfant.ru O
 сочетание O
 ингредиентов O
 , O
-овощи O
+овощи B-negative
 дали O
 чрезмерное O
 количество O
@@ -4394,7 +4394,7 @@ myfant.ru O
 
 Светлая O
 состаренная O
-мебель B-negative
+мебель B-positive
 , O
 банки O
 с O
@@ -4524,7 +4524,7 @@ myfant.ru O
 не O
 самое O
 подходящее O
-место B-positive
+место O
 . O
 
 Принес O
@@ -4542,8 +4542,8 @@ myfant.ru O
 а O
 еще O
 и O
-живая O
-музыка B-positive
+живая B-positive
+музыка I-positive
 началась O
 . O
 
@@ -4576,7 +4576,7 @@ myfant.ru O
 1000руб O
 . O
 
-Пива B-negative
+Пива O
 нет O
 , O
 но O
@@ -4667,9 +4667,9 @@ myfant.ru O
 день O
 ! O
 
-Интерьер B-neutral
-на O
-троечку O
+Интерьер B-positive
+на I-positive
+троечку I-positive
 , O
 ну O
 собственно O
@@ -4706,8 +4706,8 @@ myfant.ru O
 удобный O
 танцпол O
 , O
-живая O
-музыка B-positive
+живая B-positive
+музыка I-positive
 вам O
 обязательно O
 понравятся O
@@ -4793,9 +4793,9 @@ myfant.ru O
 ) O
 
 Холодные O
-закуска O
+закуска B-negative
 и O
-салат B-positive
+салат O
 были O
 великолепны O
 ! O
@@ -4914,7 +4914,7 @@ myfant.ru O
 посоветуйте O
 , O
 явно O
-меню B-negative
+меню O
 в O
 этом O
 ресторане O
@@ -4924,7 +4924,7 @@ myfant.ru O
 , O
 ничего O
 про O
-вино O
+вино B-negative
 она O
 мне O
 не O
@@ -5009,7 +5009,7 @@ myfant.ru O
 немногим O
 позже O
 принесли O
-салаты O
+салаты B-negative
 и O
 , O
 не O
@@ -5038,7 +5038,7 @@ myfant.ru O
 достойные O
 . O
 
-Меню O
+Меню B-positive
 посмотреть O
 не O
 могли O
@@ -5058,7 +5058,7 @@ myfant.ru O
 не O
 понравился O
 , O
-блюдо B-negative
+блюдо O
 показалось O
 достаточно O
 жирным O
@@ -5204,15 +5204,15 @@ myfant.ru O
 все O
 свежее O
 и O
-оформление B-negative
-блюд I-negative
+оформление O
+блюд O
 особенно O
 порадовало O
 ! O
 
 Очень O
 приветливая O
-девушка B-negative
+девушка B-positive
 ! O
 
 Уже O
@@ -5480,11 +5480,11 @@ myfant.ru O
 и O
 ради O
 такого O
-замечательного B-negative
-обслуживания I-negative
+замечательного O
+обслуживания B-negative
 и O
 вкусной O
-еды B-negative
+еды O
 я O
 готова O
 возвращаться O
@@ -5526,7 +5526,7 @@ myfant.ru O
 очень O
 просторный O
 и O
-атмосферный B-positive
+атмосферный O
 , O
 свободного O
 места O
@@ -5549,7 +5549,7 @@ myfant.ru O
 
 И O
 большие O
-порции B-negative
+порции B-positive
 , O
 что O
 не O
@@ -5578,7 +5578,7 @@ myfant.ru O
 не O
 покидало O
 . O
-пепельницу B-negative
+пепельницу O
 ( O
 которую O
 все O
@@ -5651,7 +5651,7 @@ myfant.ru O
 которой O
 еще O
 находилась O
-еда B-negative
+еда B-positive
 , O
 а O
 пустую O
@@ -5678,14 +5678,14 @@ myfant.ru O
 ) O
 
 Затем O
-суп B-negative
+суп O
 для O
 друга O
 , O
 и O
 затем O
 все O
-суши B-positive
+суши B-negative
 ( O
 минут O
 через O
@@ -5758,7 +5758,7 @@ myfant.ru O
 
 Руководству O
 и O
-персоналу O
+персоналу B-positive
 СПАСИБО O
 . O
 
@@ -5835,7 +5835,7 @@ myfant.ru O
 
 Встретили O
 приветливые O
-девушки B-negative
+девушки O
 , O
 спросили O
 забронирован O
@@ -5880,7 +5880,7 @@ myfant.ru O
 детская O
 комната O
 , O
-официант B-negative
+официант B-positive
 показал O
 , O
 где O
@@ -5899,7 +5899,7 @@ myfant.ru O
 заняться O
 , O
 есть O
-телевизор B-negative
+телевизор B-positive
 , O
 компьютер O
 , O
@@ -5918,7 +5918,7 @@ myfant.ru O
 понравилось O
 . O
 
-Интерьер B-negative
+Интерьер O
 мне O
 понравился O
 , O
@@ -5994,7 +5994,7 @@ myfant.ru O
 долго O
 мучаться O
 читая O
-меню B-negative
+меню O
 ! O
 
 Большое O
@@ -6022,7 +6022,7 @@ myfant.ru O
 Все O
 понравилось O
 - O
-порции B-negative
+порции B-positive
 большие O
 . O
 
@@ -6107,7 +6107,7 @@ myfant.ru O
 большое O
 за O
 уютную O
-атмосферу B-negative
+атмосферу B-positive
 , O
 от O
 Вас O
@@ -6159,7 +6159,7 @@ Roll I-positive
 . O
 
 По O
-меню B-negative
+меню O
 : O
 наиотличнейший O
 стейк O
@@ -6186,8 +6186,8 @@ Roll I-positive
 с O
 2 O
 бутылками O
-столового O
-вина O
+столового B-negative
+вина I-negative
 - O
 всего O
 3000 O
@@ -6269,7 +6269,7 @@ Roll I-positive
 высморкались O
 все O
 с O
-кухни B-negative
+кухни B-positive
 ! O
 ! O
 ! O
@@ -6295,7 +6295,7 @@ Roll I-positive
 хороший O
 кусок B-positive
 лосося-филадельфии-чуток I-positive
-риса O
+риса I-positive
 , O
 смело O
 возьму O
@@ -6314,7 +6314,7 @@ Roll I-positive
 
 Надеюсь O
 ваш O
-персонал B-positive
+персонал O
 всегда O
 так O
 же O
@@ -6427,7 +6427,7 @@ Roll I-positive
 человек O
 предложил O
 несколько O
-столов B-negative
+столов O
 куда O
 можно O
 было O
@@ -6542,9 +6542,9 @@ Roll I-positive
 ресторане O
 приятная O
 , O
-располагает I-neutral
-к I-neutral
-отдыху I-neutral
+располагает O
+к O
+отдыху O
 . O
 
 Тебе O
@@ -6580,7 +6580,7 @@ Roll I-positive
 пиво B-positive
 в O
 этом O
-заведении O
+заведении B-negative
 и O
 нам O
 очень O
@@ -6727,8 +6727,8 @@ Roll I-positive
 этот O
 вечер O
 была O
-живая O
-музыка B-positive
+живая B-positive
+музыка I-positive
 , O
 пианистка B-negative
 играла O
@@ -6750,7 +6750,7 @@ Roll I-positive
 
 Заказала O
 я O
-салат B-positive
+салат O
 , O
 большую O
 порцию O
@@ -6787,7 +6787,7 @@ Roll I-positive
 десерт O
 , O
 заказала O
-тирамису B-negative
+тирамису B-positive
 , O
 и O
 правильно O
@@ -6852,7 +6852,7 @@ Roll I-positive
 могу O
 сказать O
 что O
-обслуживание B-positive
+обслуживание B-negative
 ни O
 чем O
 особенным O
@@ -6903,8 +6903,8 @@ Roll I-positive
 важно O
 . O
 
-Заведение B-positive
-светлое I-positive
+Заведение O
+светлое O
 , O
 стильное O
 . O
@@ -7107,7 +7107,7 @@ Roll I-positive
 не O
 пустые O
 , O
-салаты O
+салаты B-negative
 все O
 вкусные O
 , O
@@ -7256,7 +7256,7 @@ Tefsi O
 место B-positive
 ! O
 
-Повару B-positive
+Повару O
 большой O
 респект O
 . O
@@ -7327,7 +7327,7 @@ Tefsi O
 . O
 
 Хотя O
-диванчики B-positive
+диванчики O
 можно O
 было O
 бы O
@@ -7342,7 +7342,7 @@ Tefsi O
 " O
 , O
 с O
-подушками B-positive
+подушками O
 . O
 
 Шашлык B-positive

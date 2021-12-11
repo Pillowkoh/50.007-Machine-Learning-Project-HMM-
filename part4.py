@@ -171,26 +171,25 @@ class StructuredPerceptron:
         suffix2 = word_lower[-2:]
 
         features = [
-            f'PREFIX2+2TAGS_{prefix2}_{prev_tag}_{tag}',
-            f'PREFIX3+2TAGS_{prefix3}_{prev_tag}_{tag}',
-            f'DASH_{"-" in token}_{tag}',
-            f'WORD_LOWER+TAG_{word_lower}_{tag}',
-            f'UPPER_{token[0].isupper()}_{tag}',
+            f'PREFIX2_{prefix2}',
             f'PREFIX2+TAG_{prefix2}_{tag}',
-            f'SUFFIX3+2TAGS_{suffix3}_{prev_tag}_{tag}',
-            f'WORD_LOWER+TAG_BIGRAM_{word_lower}_{tag}_{prev_tag}',
-            f'SUFFIX3+TAG_{suffix3}_{tag}',
-            f'SUFFIX3_{suffix3}',
+            f'PREFIX2+2TAGS_{prefix2}_{prev_tag}_{tag}',
+            f'PREFIX3_{prefix3}',
+            f'PREFIX3+TAG_{prefix3}_{tag}',
+            f'PREFIX3+2TAGS_{prefix3}_{prev_tag}_{tag}',
+            f'SUFFIX2_{suffix2}',
             f'SUFFIX2+TAG_{suffix2}_{tag}',
             f'SUFFIX2+2TAGS_{suffix2}_{prev_tag}_{tag}',
+            f'SUFFIX3_{suffix3}',
+            f'SUFFIX3+TAG_{suffix3}_{tag}',
+            f'SUFFIX3+2TAGS_{suffix3}_{prev_tag}_{tag}',
             f'WORD_LOWER+TAG_{word_lower}_{tag}',
-            f'PREFIX3+TAG_{prefix3}_{tag}',
-            f'PREFIX2_{prefix2}',
+            f'WORD_LOWER+TAG_BIGRAM_{word_lower}_{tag}_{prev_tag}',
+            f'UPPER_{token[0].isupper()}_{tag}',
             f'TAG_{tag}',
             f'TAG_BIGRAM_{prev_tag}_{tag}',
-            f'SUFFIX2_{suffix2}',
+            f'DASH_{"-" in token}_{tag}',
             f'WORDSHAPE_{self._shape(token)}_TAG_{tag}',
-            f'PREFIX3_{prefix3}',
             f'ISPUNC_{token in string.punctuation}'
         ]
         
