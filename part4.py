@@ -2,27 +2,10 @@ from collections import Counter, defaultdict
 import time
 import re
 import string
-import pprint
 
 class StructuredPerceptron:
     def __init__(self):
-        """ Class implementing Structured Perceptron model.
-            Attributes:
-                possible_states: List of possible states. E.g. 
-                    [ "state_1", ..., "state_n" ]
-                predictions: List of predictions made. E.g.
-                    [
-                        [
-                            ["this", "state1"],
-                            ["is", "state2"],
-                            ["an", "state3"],
-                            ["example", "state4"],
-                        ],
-                        ...
-                    ]
-                feature_weights: Dictionary containing individual feature weights.
-                total_feature_weights: Dictionary containing overall feature weights.
-        """
+
         self.possible_states = []
 
         self.predictions = None
@@ -31,10 +14,6 @@ class StructuredPerceptron:
         self.total_feature_weights = defaultdict(tuple)
     
     def _count_all(self):
-        """ Count possible states. 
-            Returns: 
-                self.
-        """
         states = set()
         for sentence in self.train_dataset:
             for _, tag in sentence:
@@ -43,22 +22,6 @@ class StructuredPerceptron:
         return self
 
     def train(self, train_dataset, no_of_epochs=10, learning_rate=0.2):
-        """ Train model.
-            Args: 
-                train_data: list of parsed training data of the following form:
-                    [
-                        [
-                            ["this", "state1"],
-                            ["is", "state2"],
-                            ["an", "state3"],
-                            ["example", "state4"],
-                        ],
-                        ...
-                    ]
-            
-            Returns:
-                self.
-        """
         assert no_of_epochs > 0
 
         self.train_dataset = train_dataset
@@ -93,64 +56,57 @@ class StructuredPerceptron:
             
         return self
 
-    def _viterbi(self, example):
-        """ Implementation of viterbi algorithm.
-            Args:
-                example: List of strings for words in example.
-            
-            Returns:
-                List of predictions for example.
-        """
+    def _viterbi(self, sentence):
         # Base Case
         k = 1
-        pi = {
+        scores = {
             k: {}
         }
-        pi_edge = {
+        scores_parent = {
             k: {}
         }
         for state in self.possible_states:
-            features = self._get_features(example[0], state, "START")
+            features = self._get_features(sentence[0], state, "START")
             feature_weights = sum((self.feature_weights[x] for x in features))
             # print(f'feature weights: {tuple(self.feature_weights[x] for x in features)}')
-            pi[k][state] = feature_weights
-            pi_edge[k][state] = "START"
+            scores[k][state] = feature_weights
+            scores_parent[k][state] = "START"
 
         # Move forward recursively
-        for observation in example[1:]:
+        for observation in sentence[1:]:
             k += 1
-            pi[k] = {}
-            pi_edge[k] = {}
+            scores[k] = {}
+            scores_parent[k] = {}
             for v in self.possible_states:
-                probabilities = {}
-                for u in pi[k-1].keys():
+                state_score = {}
+                for u in scores[k-1].keys():
                     features = self._get_features(observation, v, u)
                     feature_weights = sum((self.feature_weights[x] for x in features))
 
-                    probabilities[u] = pi[k-1][u] + feature_weights
+                    state_score[u] = scores[k-1][u] + feature_weights
                     
-                max_state = max(probabilities, key=probabilities.get)
-                pi[k][v] = probabilities[max_state]
-                pi_edge[k][v] = max_state
+                max_state = max(state_score, key=state_score.get)
+                scores[k][v] = state_score[max_state]
+                scores_parent[k][v] = max_state
             
         
         # Transition to STOP
-        probabilities = {}
-        for u in pi[k].keys():
+        state_score = {}
+        for u in scores[k].keys():
             feature_weights = self.feature_weights[(u, "STOP")]
-            probabilities[u] = pi[k][u] + feature_weights
+            state_score[u] = scores[k][u] + feature_weights
         
         # Best y_n
-        y_n = max(probabilities, key=probabilities.get)
-        state_pred_r = [y_n]
+        y_n = max(state_score, key=state_score.get)
+        prediction_reversed = [y_n]
 
         # Backtrack
         for n in reversed(range(1, k+1)):
-            next_state = state_pred_r[-1]
-            state_pred_r.append(pi_edge[n][next_state])
-        state_pred_r.reverse()
+            next_state = prediction_reversed[-1]
+            prediction_reversed.append(scores_parent[n][next_state])
+        prediction_reversed.reverse()
         
-        return state_pred_r[1:]
+        return prediction_reversed[1:]
 
     def _get_global_features(self, tokens, tags):
         feature_counts = Counter()
@@ -160,7 +116,6 @@ class StructuredPerceptron:
             else:
                 prev_tag = tags[idx-1]
             feature_counts.update(self._get_features(token, tag, prev_tag))
-            # pprint.pprint(feature_counts)
         return feature_counts
 
     def _get_features(self, token, tag, prev_tag):
@@ -196,11 +151,6 @@ class StructuredPerceptron:
         return features
     
     def _update(self, features, learning_rate, epoch_no):
-        """ Updates feature weights. 
-        
-            Returns:
-                self.
-        """
         for f, count in features.items():
             w = self.feature_weights[f]
 
@@ -220,13 +170,9 @@ class StructuredPerceptron:
         
         return self
     
-    def _shape(self, word):
-        """ Get 'shape' of word (caps, numbers, etc.).
-            Returns:
-                String describing shape of word.
-        """
+    def _shape(self, token):
         result = []
-        for char in word:
+        for char in token:
             if char.isupper():
                 result.append('X')
             elif char.islower():
