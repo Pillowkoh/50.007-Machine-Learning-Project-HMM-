@@ -55,6 +55,8 @@ optional arguments:
   --epochs EPOCHS      	Used when running part 4. Defaults to 10.
 ```
 
+
+
 ### Part 1
 
 Using only emission probabilities to predict the output sequence.
@@ -66,6 +68,8 @@ python main.py --part=1 --datasets=ES,RU
 ```
 
 **Output files:** /Datasets/{datasets}/dev.p1.out
+
+
 
 ### Part 2
 
@@ -79,6 +83,8 @@ python main.py --part=2 --datasets=ES,RU
 
 **Output files:** /Datasets/{datasets}/dev.p2.out
 
+
+
 ### Part 3
 
 Similar to Part 2, but Viterbi algorithm is modified to find the 5-th best output sequence.
@@ -89,25 +95,45 @@ Run the following command in the terminal:
 python main.py --part=3 --datasets=ES,RU [--k_num=k]
 ```
 
+**Output files:** /Datasets/{datasets}/dev.p3.out
+
+
+
 `--k_num` is used to determine the order of k-th best output sequence that the Viterbi algorithm will predict. 
 
 The value of `--k_num` is defaulted to 5. Only specify this parameter if you wish to find out other orders of k-th best output sequence.
 
-**Output files:** /Datasets/{datasets}/dev.p3.out
+
 
 ### Part 4
 
 Uses Structured Perceptron model for a discriminative approach of predicting the output sequence.
 
-Run the following command in the terminal:
+Choose one of the following commands to run in the terminal:
+
+#### Getting predictions for dev.in files:
+
+```
+python main.py --part=4 --datasets=ES,RU [--epochs=n]
+```
+
+**Output files:** /Datasets/{datasets}/dev.p4.out
+
+
+
+#### Getting predictions for test.in files:
 
 ```
 python main.py --part=4 --datasets=ES-test,RU-test [--epochs=n]
 ```
 
+**Output files:** /Datasets/{datasets}/test.p4.out
+
+
+
 `--epochs` is used to control the number of epochs to be iterated for the training process before predicting the test dataset.
 
 The value of `--epoch` is defaulted to 10.
 
-**Output files:** /Datasets/{datasets}/test.p4.out
+`--datasets` can take different arguments such as ES, RU, ES-test, RU-test.
 
