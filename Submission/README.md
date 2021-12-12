@@ -137,5 +137,3 @@ python main.py --part=4 --datasets=ES-test,RU-test [--epochs=n]
 
 The value of `--epoch` is defaulted to 10.
 
-`--datasets` can take different arguments such as ES, RU, ES-test, RU-test.
-
