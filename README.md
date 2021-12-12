@@ -69,7 +69,7 @@ python main.py --part=1 --datasets=ES,RU
 
 **Output files:** /Datasets/{datasets}/dev.p1.out
 
-
+&nbsp;
 
 ## Part 2
 
@@ -83,7 +83,7 @@ python main.py --part=2 --datasets=ES,RU
 
 **Output files:** /Datasets/{datasets}/dev.p2.out
 
-
+&nbsp;
 
 ## Part 3
 
@@ -97,19 +97,21 @@ python main.py --part=3 --datasets=ES,RU [--k_num=k]
 
 **Output files:** /Datasets/{datasets}/dev.p3.out
 
-
+&nbsp;
 
 `--k_num` is used to determine the order of k-th best output sequence that the Viterbi algorithm will predict. 
 
 The value of `--k_num` is defaulted to 5. Only specify this parameter if you wish to find out other orders of k-th best output sequence.
 
-
+&nbsp;
 
 ## Part 4
 
 Uses Structured Perceptron model for a discriminative approach of predicting the output sequence.
 
 Choose one of the following commands to run in the terminal:
+
+&nbsp;
 
 ### Getting predictions for dev.in files:
 
@@ -119,7 +121,7 @@ python main.py --part=4 --datasets=ES,RU [--epochs=n]
 
 **Output files:** /Datasets/{datasets}/dev.p4.out
 
-
+&nbsp;
 
 ### Getting predictions for test.in files:
 
@@ -129,7 +131,7 @@ python main.py --part=4 --datasets=ES-test,RU-test [--epochs=n]
 
 **Output files:** /Datasets/{datasets}/test.p4.out
 
-
+&nbsp;
 
 `--epochs` is used to control the number of epochs to be iterated for the training process before predicting the test dataset.
 
