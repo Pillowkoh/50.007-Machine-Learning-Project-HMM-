@@ -57,7 +57,7 @@ optional arguments:
 
 
 
-### Part 1
+## Part 1
 
 Using only emission probabilities to predict the output sequence.
 
@@ -71,7 +71,7 @@ python main.py --part=1 --datasets=ES,RU
 
 
 
-### Part 2
+## Part 2
 
 Using emission and transition probabilities, and Viterbi algorithm to predict the output sequence.
 
@@ -85,7 +85,7 @@ python main.py --part=2 --datasets=ES,RU
 
 
 
-### Part 3
+## Part 3
 
 Similar to Part 2, but Viterbi algorithm is modified to find the 5-th best output sequence.
 
@@ -105,13 +105,13 @@ The value of `--k_num` is defaulted to 5. Only specify this parameter if you wis
 
 
 
-### Part 4
+## Part 4
 
 Uses Structured Perceptron model for a discriminative approach of predicting the output sequence.
 
 Choose one of the following commands to run in the terminal:
 
-#### Getting predictions for dev.in files:
+### Getting predictions for dev.in files:
 
 ```
 python main.py --part=4 --datasets=ES,RU [--epochs=n]
@@ -121,7 +121,7 @@ python main.py --part=4 --datasets=ES,RU [--epochs=n]
 
 
 
-#### Getting predictions for test.in files:
+### Getting predictions for test.in files:
 
 ```
 python main.py --part=4 --datasets=ES-test,RU-test [--epochs=n]
